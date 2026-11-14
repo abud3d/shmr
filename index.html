@@ -10,9 +10,9 @@
 *{box-sizing:border-box}html{min-height:100%}body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 50% 0%,#322713 0%,#15120e 36%,#090909 78%);color:#f5f0e7;font-family:Tahoma,Arial,sans-serif}
 body:before{content:"";position:fixed;inset:15px;border:1px solid #cba75a24;pointer-events:none}
 .wrap{width:min(100% - 40px,1000px);margin:auto;min-height:100svh;display:flex;flex-direction:column}
-header{display:flex;justify-content:space-between;align-items:center;padding:36px 0;border-bottom:1px solid #cba75a30;gap:12px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:36px 0;border-bottom:1px solid #cba75a30;gap:12px}
 .brand{color:var(--gold);font-size:24px;letter-spacing:.22em;font-weight:700;direction:ltr}
-.tag{font-size:12px;color:#c9b88f;letter-spacing:.12em}
+.tag{font-size:12px;color:#c9b88f;letter-spacing:.12em}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:#e5d4ab;text-decoration:none;font-size:14px;padding:8px;border-bottom:1px solid transparent}nav a:hover,nav a:focus-visible{border-color:var(--gold)}@keyframes shimmer{0%,100%{opacity:1;transform:translateY(0)}50%{opacity:.12;transform:translateY(-9px)}}h1{animation:shimmer 4s ease-in-out infinite}@media(prefers-reduced-motion:reduce){h1{animation:none}}
 main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:65px 0}
 .eyebrow{color:var(--gold);font-size:12px;letter-spacing:.35em;direction:ltr;margin-bottom:25px}
 h1{font-size:clamp(75px,16vw,175px);line-height:1;margin:0;letter-spacing:.13em;padding-left:.13em;direction:ltr;background:linear-gradient(120deg,#86662c,#f5df9c 40%,#c39a4e 70%,#f2d68a);color:transparent;background-clip:text;-webkit-background-clip:text}
@@ -28,7 +28,7 @@ footer{border-top:1px solid #cba75a30;display:flex;justify-content:space-between
 </style>
 </head>
 <body><div class="wrap">
-<header><div class="brand">SHMR</div><div class="tag">THE NEXT CHAPTER</div></header>
+<header><div class="brand">SHMR</div><nav aria-label="القائمة الرئيسية"><a href="./">الرئيسية</a><a href="./services.html">خدماتنا</a><a href="./works.html">أعمالنا</a><a href="./features.html">مميزاتنا</a></nav></header>
 <main>
 <div class="eyebrow">A NEW ERA IS COMING</div>
 <h1>SHMR</h1><div class="rule"></div>
@@ -40,7 +40,7 @@ footer{border-top:1px solid #cba75a30;display:flex;justify-content:space-between
 <div class="zone">RIYADH · UTC+03:00</div>
 </section>
 </main>
-<footer><span>© <span id="year">2026</span> SHMR. جميع الحقوق محفوظة.</span><span>COMING SOON · V2.0</span></footer>
+<footer><span>© <span id="year">2026</span> SHMR. جميع الحقوق محفوظة.</span><span>COMING SOON · V2.1</span></footer>
 </div>
 <script>
 (function(){
